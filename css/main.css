@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --main-orange-color: #DC780B;
+    --main-dark-color: #150C01;
+    --roboto-font: 'Roboto', sans-serif;
+    --philosopher-font: 'Philosopher', sans-serif;
+    --dark-grey: #C4C4C4;
+    --mobile-app-bg: #FBF1E7;
+}
+
+/* TODO________________________ Main Style __________________________________ */
+
+.nav-link {
+    color: var(--main-dark-color) !important;
+    opacity: 0.6 !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    font-family: var(--roboto-font) !important;
+}
+
+.main-font {
+    font-family: var(--philosopher-font) !important;
+    color: var(--main-dark-color) !important;
+    font-weight: 700 !important;
+}
+
+.main-text {
+    font-family: var(--roboto-font) !important;
+    font-size: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.7;
+    color: var(--main-dark-color) !important;
+}
+.main-text-footer {
+    font-family: var(--roboto-font) !important;
+    font-size: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.7;
+    color: #fff !important;
+}
+
+.main-button {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    font-family: var(--roboto-font) !important;
+    border-radius: 5px !important;
+}
+
+.category {
+    color: var(--main-orange-color) !important;
+    letter-spacing: 0.2em !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    text-transform: uppercase !important;
+}
+
+.main-color {
+    color: var(--main-orange-color) !important;
+}
+
+.main-bg-color {
+    background-color: var(--main-orange-color) !important;
+}
+.star-color {
+    color: var(--dark-grey) !important;
+}
+
+.app-bg {
+    background: url('../assets/app/bg.svg') !important;
+    background-size: contain;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.navbar-toggler:focus {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* loading */
+#loading {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0.7;
+  background-color: #fff;
+  z-index: 99;
+}
+
+#loading-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%,-50%);
+}
+
+
+/* Navbar */
+
+.nav-item {
+    padding: 0 8px;
+}
+
+.nav-item :hover {
+    color: var(--main-orange-color) !important;
+}
+
+/* Header */
+
+header h1 {
+    font-size: 52px;
+    line-height: 70px;
+}
+
+header .detail-btn {
+    border: 1px solid var(--main-orange-color) !important;
+}
+
+header .detail-btn:hover {
+    background-color: var(--main-orange-color);
+    color: #fff !important;
+}
+
+header .order-btn:hover + .detail-btn {
+    background-color: var(--main-orange-color) !important;
+    color: #fff !important;
+}
+header .detail-btn:hover  .order-btn {
+    background-color: #fff !important;
+    color: var(--main-orange-color) !important;
+}
+
+header .order-btn:hover {
+    background-color: #fff !important; 
+    color: var(--main-orange-color) !important;
+    border: 1px solid var(--main-orange-color) !important;
+}
+
+/* About US */
+
+#aboutUs .container-fluid {
+    background: url('../assets/about/bg-wave.svg');
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;   
+}
+
+#aboutUs h3 {
+    line-height: 40px;
+}
+
+
+/* main */
+
+#main .col {
+    border-radius: 10px;
+    border-top-left-radius: 21%;
+    border-top: none !important;
+}
+#main .menu-card {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border-top-left-radius: 21%;
+}
+
+/* app */
+
+#app .btn {
+    border: none !important;
+}
+
+/* contact */
+
+#contact .container-fluid {
+    background: url('../assets/contact/bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* footer */
+footer {
+    background-color: #252525 !important;
+}
+
+@media (max-width: 576px) {
+    .main-text {
+    font-family: var(--roboto-font) !important;
+    font-size: 16px;
+    font-weight: 400;
+    font-size: 12px !important;
+    opacity: 0.7;
+    color: var(--main-dark-color) !important;
+}
+    h1 {
+    font-size: 25px !important;
+    }
+}
